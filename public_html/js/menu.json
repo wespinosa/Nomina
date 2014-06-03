@@ -1,0 +1,18 @@
+{
+    "items":  [
+                {"calendario":
+                 [
+                  {"Nombre":"Calendario"},
+                  {"icono":"calendar"},
+                  {"path":"calendario.html"}
+                 ]
+                },
+                {"Verdura":
+                 [
+                  {"Nombre":"Lechuga"},
+                  {"icono":"Tomate"},
+                  {"path":"Pepino"}
+                 ]
+                }
+              ]
+}
