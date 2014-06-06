@@ -1,0 +1,30 @@
+[
+    {
+        "Codigo":956,
+        "nombre":"Willian",
+        "apellido":"Espinosa",
+        "cedula":"1720802394",
+        "division":"Administrativo"
+    },
+    {
+        "Codigo":958,
+        "nombre":"Juan",
+        "apellido":"Peres",
+        "cedula":"17200090057",
+        "division":"Grifería"
+    },
+    {
+        "Codigo":959,
+        "nombre":"Andrea",
+        "apellido":"Guzman",
+        "cedula":"1720809875",
+        "division":"Sanitarios"
+    },
+    {
+        "Codigo":102,
+        "nombre":"Enrrique",
+        "apellido":"Logroño",
+        "cedula":"17205698526",
+        "division":"Administrativo"
+    }
+]

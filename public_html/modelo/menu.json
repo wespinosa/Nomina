@@ -1,0 +1,101 @@
+[
+   {"id":1,
+    "name": "Inicio",
+    "icon": "fa-home",
+    "url":"#",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":2,
+    "name": "Personal",
+    "icon": "fa-user-md",
+    "url":"#/personal",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":3,
+    "name": "Mail",
+    "icon": "fa-inbox",
+    "url":"#/mail",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":4,
+    "name": "Periodos",
+    "icon": "fa-bar-chart-o",
+    "url":"#/periodos",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":5,
+    "name": "Rubros de Nomina",
+    "icon": "fa-bar-chart-o",
+    "url":"#/rubros",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":6,
+    "name": "Pre-Rol de Pagos",
+    "icon": "fa-table",
+    "url":"#/prerol",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":7,
+    "name": "Tipo de Roles",
+    "icon": "fa-pencil-square-o",
+    "privilegio": "true",
+    "submenu":[
+                {"name":"Tipo de Rol","icon":"","url":"#/tiporol"},
+                {"name":"Tipo de Rol - Periodo","icon":"","url":"#/tiporolPeriodo"}
+              ]
+   },
+   {"id":8,
+    "name": "Plan de Cuentas-Rubros",
+    "icon": "fa-bar-chart-o",
+    "url":"#/planCuentas",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":9,
+    "name": "Novedades",
+    "icon": "fa-bar-chart-o",
+    "url":"#/novedades",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":10,
+    "name": "Impuesto a la Renta",
+    "icon": "fa-table",
+    "privilegio": "true",
+    "submenu":[
+                {"name":"Deduccion de Gastos","icon":"","url":"#/deduccionGasto"},
+                {"name":"Deduccion de Gastos-Empleado","icon":"","url":"#/deduccionGastoEmpleado"},
+                {"name":"Parametros de Renta","icon":"","url":"#/parametroRenta"},
+                {"name":"Periodos de Renta","icon":"","url":"#/periodosRenta"}
+              ]
+   },
+   {"id":11,
+    "name": "Valores Constantes",
+    "icon": "fa-bar-chart-o",
+    "url":"#/valoresConstantes",
+    "privilegio": "true",
+    "submenu":""
+   },
+   {"id":12,
+    "name": "Rol de Pagos",
+    "icon": "fa-table",
+    "privilegio": "true",
+    "submenu":[
+                {"name":"Procesar Rol","icon":"","url":"#/procesaRol"},
+                {"name":"Aprobacion Rol","icon":"","url":"#/apruebaRol"}
+              ]
+   },
+   {"id":13,
+    "name": "Calendario",
+    "icon": "fa-calendar",
+    "url":"#/calendario",
+    "privilegio": "true",
+    "submenu":""
+   }
+]

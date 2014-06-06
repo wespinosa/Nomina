@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/demo.css">
+    </head>
+    <body ng-app="rutasMenu">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-pencil-square-o"></i> Novedades</h1>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <a data-toggle="modal" href="#myModal" class="btn btn-success btn-lg pull-right header-btn hidden-mobile"><i class="fa fa-circle-arrow-up fa-lg"></i> Agregar Novedad</a>
+                </div>
+            </div>
+
+        <section id="widget-grid" class="">
+                <div class="row" ng-controller="NovedadCtrl">
+                        <article class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-editbutton="false">
+                                    <header>
+                                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                                            <h2>Listado de Empleados</h2>
+                                    </header>
+                                    <div>
+                                            <div class="jarviswidget-editbox">
+
+                                            </div>
+                                            <div class="widget-body no-padding">
+                                                    <div class="widget-body-toolbar">
+
+                                                    </div>
+                                                    <table id="datatable_tabletools" class="table table-striped table-hover dataTable" aria-describedby="datatable_tabletools_info">
+                                                            <thead>
+                                                                    <tr>
+                                                                            <th>Código</th>
+                                                                            <th>Nombre</th>
+                                                                            <th>Apellido</th>
+                                                                            <th>Cédula</th>
+                                                                            <th>División</th>
+                                                                            <th>Acción</th>
+                                                                    </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                   <tr ng-repeat="person in people">
+                                                                            <td>{{person.Codigo}}</td>
+                                                                            <td>{{person.nombre}}</td>
+                                                                            <td>{{person.apellido}}</td>
+                                                                            <td>{{person.cedula}}</td>
+                                                                            <td>{{person.division}}</td>
+                                                                            <td><i class="fa fa-times"></i></td>
+                                                                    </tr>
+                                                            </tbody>
+                                                    </table>
+                                            </div>
+                                    </div>
+                            </div>
+                        </article>
+                        <article class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-editbutton="false">
+                                    <header>
+                                            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+                                            <h2>Listado de Novedades del Empleado</h2>
+
+                                    </header>
+                                    <div>
+                                            <div class="jarviswidget-editbox">
+
+                                            </div>
+                                            <div class="widget-body no-padding">
+                                                    <div class="widget-body-toolbar">
+
+                                                    </div>
+                                                    <table id="datatable_tabletools_Rubros" class="table table-striped table-hover dataTable" aria-describedby="datatable_tabletools_info">
+                                                            <thead>
+                                                                    <tr>
+                                                                            <th>Código</th>
+                                                                            <th>Nombre</th>
+                                                                            <th>Apellido</th>
+                                                                            <th>Cédula</th>
+                                                                            <th>División</th>
+                                                                            <th>Acción</th>
+                                                                    </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                    <tr ng-repeat="person in people">
+                                                                            <td>{{person.Codigo}}</td>
+                                                                            <td>{{person.nombre}}</td>
+                                                                            <td>{{person.apellido}}</td>
+                                                                            <td>{{person.cedula}}</td>
+                                                                            <td>{{person.division}}</td>
+                                                                            <td><i class="fa fa-times"></i></td>
+                                                                    </tr>
+                                                                    
+                                                            </tbody>
+                                                    </table>
+                                            </div>
+                                    </div>
+                            </div>
+                        </article>
+                </div>
+            </section>
+            <!--================================================== -->
+		<!-- BOOTSTRAP JS -->
+		<!--script src="js/bootstrap/bootstrap.min.js"></script>
+		<!-- CUSTOM NOTIFICATION -->
+		<!--script src="js/notification/SmartNotification.min.js"></script>
+		<!-- JARVIS WIDGETS -->
+		<!--script src="js/smartwidgets/jarvis.widget.min.js"></script>
+		<!-- EASY PIE CHARTS -->
+		<!--script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<!-- SPARKLINES -->
+		<!--script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+		<!-- JQUERY VALIDATE -->
+		<!--script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+		<!-- JQUERY MASKED INPUT -->
+		<!--script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+		<!-- JQUERY SELECT2 INPUT -->
+		<!--script src="js/plugin/select2/select2.min.js"></script>
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<!--script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+		<!-- browser msie issue fix -->
+		<!--script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+		<!-- FastClick: For mobile devices -->
+		<!--script src="js/plugin/fastclick/fastclick.js"></script>
+		<!-- Demo purpose only -->
+		<!--script src="js/demo.js"></script>
+		<!-- MAIN APP JS FILE -->
+                
+		
+                
+		<script type="text/javascript">
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		$(document).ready(function() {
+                   $('#datatable_tabletools').dataTable({
+				"sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+				"oTableTools" : {
+					"aButtons" : ["copy", "print", {
+						"sExtends" : "collection",
+						"sButtonText" : 'Save <span class="caret" />',
+						"aButtons" : ["csv", "xls", "pdf"]
+					}],
+					"sSwfPath" : "js/plugin/datatables/media/swf/copy_csv_xls_pdf.swf"
+				},
+				"fnInitComplete" : function(oSettings, json) {
+					$(this).closest('#dt_table_tools_wrapper').find('.DTTT.btn-group').addClass('table_tools_group').children('a.btn').each(function() {
+						$(this).addClass('btn-sm btn-default');
+					});
+				}
+			});
+                   $('#datatable_tabletools_Rubros').dataTable({
+				"sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+				"oTableTools" : {
+					"aButtons" : ["copy", "print", {
+						"sExtends" : "collection",
+						"sButtonText" : 'Save <span class="caret" />',
+						"aButtons" : ["csv", "xls", "pdf"]
+					}],
+					"sSwfPath" : "js/plugin/datatables/media/swf/copy_csv_xls_pdf.swf"
+				},
+				"fnInitComplete" : function(oSettings, json) {
+					$(this).closest('#dt_table_tools_wrapper').find('.DTTT.btn-group').addClass('table_tools_group').children('a.btn').each(function() {
+						$(this).addClass('btn-sm btn-default');
+					});
+				}
+			});
+		})
+
+		</script>
+        </body>    
+</html>
