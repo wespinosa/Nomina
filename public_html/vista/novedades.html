@@ -19,12 +19,12 @@
             </div>
 
         <section id="widget-grid" class="">
-                <div class="row" ng-controller="NovedadCtrl">
-                        <article class="col-sm-12 col-md-12 col-lg-6">
+                <div class="row" >
+                        <article class="col-sm-12 col-md-12 col-lg-6" ng-controller="NovedadCtrl">
                             <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-editbutton="false">
                                     <header>
                                             <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-                                            <h2>Listado de Empleados</h2>
+                                            <h2>Listado de Novedades</h2>
                                     </header>
                                     <div>
                                             <div class="jarviswidget-editbox">
@@ -36,23 +36,23 @@
                                                     </div>
                                                     <table id="datatable_tabletools" class="table table-striped table-hover dataTable" aria-describedby="datatable_tabletools_info">
                                                             <thead>
-                                                                    <tr>
-                                                                            <th>Código</th>
-                                                                            <th>Nombre</th>
-                                                                            <th>Apellido</th>
-                                                                            <th>Cédula</th>
-                                                                            <th>División</th>
-                                                                            <th>Acción</th>
+                                                                    <tr >
+                                                                            <th>Rubro</th>
+                                                                            <th>Descripción</th>
+                                                                            <th>Val. Empleado</th>
+                                                                            <th>Val. Empresa</th>
+                                                                            <th>Val. Solicitado</th>
+                                                                            <th>Estado</th>
                                                                     </tr>
                                                             </thead>
                                                             <tbody>
-                                                                   <tr ng-repeat="person in people">
+                                                                   <tr ng-repeat="person in people" ng-click="prueba(person.Codigo)" >
                                                                             <td>{{person.Codigo}}</td>
-                                                                            <td>{{person.nombre}}</td>
-                                                                            <td>{{person.apellido}}</td>
-                                                                            <td>{{person.cedula}}</td>
-                                                                            <td>{{person.division}}</td>
-                                                                            <td><i class="fa fa-times"></i></td>
+                                                                            <td>{{person.descripcion}}</td>
+                                                                            <td>{{person.vempleado}}</td>
+                                                                            <td>{{person.vempresa}}</td>
+                                                                            <td>{{person.vsolicitado}}</td>
+                                                                            <td>{{person.estado}}</td>
                                                                     </tr>
                                                             </tbody>
                                                     </table>
@@ -60,11 +60,11 @@
                                     </div>
                             </div>
                         </article>
-                        <article class="col-sm-12 col-md-12 col-lg-6">
+                        <article class="col-sm-12 col-md-12 col-lg-6" ng-controller="EmpeladoCtrl">
                             <div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-3" data-widget-editbutton="false">
                                     <header>
                                             <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-                                            <h2>Listado de Novedades del Empleado</h2>
+                                            <h2>Listado de Empleados</h2>
 
                                     </header>
                                     <div>

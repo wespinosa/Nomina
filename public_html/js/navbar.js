@@ -19,14 +19,31 @@ angular.module('rutasMenu')
         $scope.imgUser='img/avatars/wie.jpg';
         $scope.awesomeThings = ['HTML5 Boilerplate','AngularJS','Karma'];
     })
+    
     .controller('NovedadCtrl', function ($scope) {
-//        $scope.people = [];
+       
+        $scope.prueba = function(name) {
+            alert(name);
+            $.ajax({
+                url: 'modelo/novedadesEmpleados.json',
+                async: false,
+                dataType: 'json',
+                data:{codigo:name},
+                success: function(data) {
+                    $scope.people = data;
+                }
+            });
+        };
+   })
+   
+    .controller('EmpeladoCtrl', function ($scope) {
         $.ajax({
-            url: 'modelo/novedadesEmpleados.json',
+            url: 'modelo/listaEmpleadoNovedad.json',
             async: false,
             dataType: 'json',
             success: function(data) {
                 $scope.people = data;
             }
         });
+        
    });
